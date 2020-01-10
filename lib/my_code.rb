@@ -8,7 +8,7 @@ def map (data)
   new_data
 end
 
-def reduce (data, starting_point = 0)
+def reduce (data, starting_point = nil)
   i = 0
   new_data = starting_point
   while i < data.length do
