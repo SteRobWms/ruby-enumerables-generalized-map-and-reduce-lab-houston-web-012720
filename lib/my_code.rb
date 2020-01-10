@@ -10,10 +10,10 @@ end
 
 def reduce (data, starting_point = 0)
   i = 0
-  new_data = 0
-  new_data + starting_point
+  memo = 0
   while i < data.length do
-    new_data + yield(data[i])
+    yield(data[i])
     i += 1
   end
+  memo
 end
