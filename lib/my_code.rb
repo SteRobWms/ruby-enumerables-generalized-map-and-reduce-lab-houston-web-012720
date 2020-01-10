@@ -12,6 +12,8 @@ def reduce (data, starting_point = nil)
   i = 0
   if starting_point
     new_data = starting_point
+  else
+    new_data = data[0]
   end
   while i < data.length do
     new_data = yield(data[i], new_data)
