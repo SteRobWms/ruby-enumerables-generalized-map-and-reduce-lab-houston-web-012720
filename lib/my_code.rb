@@ -10,7 +10,9 @@ end
 
 def reduce (data, starting_point = nil)
   i = 0
-  new_data = starting_point
+  if starting_point
+    new_data = starting_point
+  end
   while i < data.length do
     new_data = yield(data[i], new_data)
     i += 1
