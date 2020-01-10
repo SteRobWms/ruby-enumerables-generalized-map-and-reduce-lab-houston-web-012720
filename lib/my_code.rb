@@ -1,9 +1,9 @@
 def map (data)
   i = 0
-  neg_data = []
+  new_data = []
   while i < data.length do
     yield
     i += 1
   end
-  neg_data
+  new_data
 end
