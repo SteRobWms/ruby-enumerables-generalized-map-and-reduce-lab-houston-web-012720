@@ -1,4 +1,4 @@
-def map (array)
+def map (data)
   i = 0
   neg_data = []
   while i < data.length do
