@@ -7,3 +7,9 @@ def map (data)
   end
   new_data
 end
+
+def reduce (data, starting_point = 0)
+  i = 0
+  new_data = 0
+  new
+end
