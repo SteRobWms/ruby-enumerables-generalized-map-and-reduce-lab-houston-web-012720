@@ -10,7 +10,7 @@ end
 
 def reduce (data, starting_point = 0)
   i = 0
-  if starting_point != 0
+  if starting_point != nil
     new_data = starting_point
   end
   while i < data.length do
