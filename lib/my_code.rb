@@ -9,11 +9,12 @@ def map (data)
 end
 
 def reduce (data, starting_point = nil)
-  i = 0
   if starting_point
     new_data = starting_point
+    i = 0
   else
     new_data = data[0]
+    i = 1
   end
   while i < data.length do
     new_data = yield(data[i], new_data)
