@@ -12,8 +12,8 @@ def reduce (data, starting_point = 0)
   i = 0
   shit = 0
   while i < data.length do
-    shit + yield(data[i])
+    print yield(data[i])
     i += 1
   end
-  shit
+  
 end
