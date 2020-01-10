@@ -15,5 +15,5 @@ def reduce (data, starting_point = 0)
     print yield(data[i])
     i += 1
   end
-  
+
 end
